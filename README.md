@@ -1,7 +1,7 @@
 
 ## Setup (local)
-1. Clone repository
-2. `cd menu-backend`
+1. `git clone https://github.com/rupeshkumargupta5532/wellfound-node.js-Assignment`
+2. `cd wellfound-node.js-Assignment`
 3. `cp .env.example .env` and update `MONGO_URI` (use MongoDB Atlas or local)
 4. `npm install`
 5. `npm run dev` (requires nodemon) or `npm start`
