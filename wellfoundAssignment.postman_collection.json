@@ -1,0 +1,600 @@
+{
+	"info": {
+		"_postman_id": "864afc64-8d15-4f31-aa0c-88131129b34b",
+		"name": "wellfound",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30179798"
+	},
+	"item": [
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "create Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Beverages\",\n  \"image\": \"https://example.com/images/beverages.jpg\",\n  \"description\": \"All kinds of drinks including hot and cold beverages.\",\n  \"taxApplicable\": true,\n  \"tax\": 5,\n  \"taxType\": \"percentage\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/categories",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all categories",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Beverages\",\n  \"image\": \"https://example.com/images/beverages.jpg\",\n  \"description\": \"All kinds of drinks including hot and cold beverages.\",\n  \"taxApplicable\": true,\n  \"tax\": 5,\n  \"taxType\": \"percentage\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/categories",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "category by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Beverages\",\n  \"image\": \"https://example.com/images/beverages.jpg\",\n  \"description\": \"All kinds of drinks including hot and cold beverages.\",\n  \"taxApplicable\": true,\n  \"tax\": 5,\n  \"taxType\": \"percentage\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/categories",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update category",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Beverages\",\n  \"image\": \"https://example.com/images/beverages.jpg\",\n  \"description\": \"All kinds of drinks including hot and cold beverages.\",\n  \"taxApplicable\": true,\n  \"tax\": 5,\n  \"taxType\": \"percentage\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/categories",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "category by id Name",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Beverages\",\n  \"taxApplicable\": false,\n  \"tax\": 15,\n  \"taxType\": \"percentage\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/categories/690c5b9f93f9dcedfc315a47",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"690c5b9f93f9dcedfc315a47"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "subcategory",
+			"item": [
+				{
+					"name": "create subcategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Hot Drinks\",\n  \"image\": \"https://example.com/images/hot-drinks.jpg\",\n  \"description\": \"Served hot - coffee, tea, etc.\",\n  \"taxApplicable\": true,\n  \"tax\": 5\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/subcategories/690c5b9f93f9dcedfc315a47",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"subcategories",
+								"690c5b9f93f9dcedfc315a47"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all subcategories",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Hot Drinks\",\n  \"image\": \"https://example.com/images/hot-drinks.jpg\",\n  \"description\": \"Served hot - coffee, tea, etc.\",\n  \"taxApplicable\": true,\n  \"tax\": 5\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/subcategories/",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"subcategories",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all subcategories under category",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Hot Drinks\",\n  \"image\": \"https://example.com/images/hot-drinks.jpg\",\n  \"description\": \"Served hot - coffee, tea, etc.\",\n  \"taxApplicable\": true,\n  \"tax\": 5\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/subcategories/by-category/690c5b9f93f9dcedfc315a47",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"subcategories",
+								"by-category",
+								"690c5b9f93f9dcedfc315a47"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get subcategory by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Hot Drinks\",\n  \"image\": \"https://example.com/images/hot-drinks.jpg\",\n  \"description\": \"Served hot - coffee, tea, etc.\",\n  \"taxApplicable\": true,\n  \"tax\": 5\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/subcategories/690c5eea93f9dcedfc315a51",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"subcategories",
+								"690c5eea93f9dcedfc315a51"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get subcategory by name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Hot Drinks\",\n  \"image\": \"https://example.com/images/hot-drinks.jpg\",\n  \"description\": \"Served hot - coffee, tea, etc.\",\n  \"taxApplicable\": true,\n  \"tax\": 5\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/subcategories/Hot Drinks",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"subcategories",
+								"Hot Drinks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update subcategory",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Cold Drinks\",\n  \"image\": \"https://example.com/images/hot-drinks.jpg\",\n  \"description\": \"Served hot - coffee, tea, etc.\",\n  \"taxApplicable\": true,\n  \"tax\": 25\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/subcategories/690c5eea93f9dcedfc315a51",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"subcategories",
+								"690c5eea93f9dcedfc315a51"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "items",
+			"item": [
+				{
+					"name": "create items under category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Cappuccino\",\n  \"image\": \"https://example.com/images/cappuccino.jpg\",\n  \"description\": \"A classic hot coffee drink with steamed milk and foam.\",\n  \"taxApplicable\": true,\n  \"tax\": 5,\n  \"baseAmount\": 150,\n  \"discount\": 20\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/items/690c5b9f93f9dcedfc315a47",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"items",
+								"690c5b9f93f9dcedfc315a47"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create items under subcategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Cappuccino\",\n  \"image\": \"https://example.com/images/cappuccino.jpg\",\n  \"description\": \"A classic hot coffee drink with steamed milk and foam.\",\n  \"taxApplicable\": true,\n  \"tax\": 5,\n  \"baseAmount\": 150,\n  \"discount\": 20\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/items/690c5b9f93f9dcedfc315a47/690c5eea93f9dcedfc315a51",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"items",
+								"690c5b9f93f9dcedfc315a47",
+								"690c5eea93f9dcedfc315a51"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all items",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Cappuccino\",\n  \"image\": \"https://example.com/images/cappuccino.jpg\",\n  \"description\": \"A classic hot coffee drink with steamed milk and foam.\",\n  \"taxApplicable\": true,\n  \"tax\": 5,\n  \"baseAmount\": 150,\n  \"discount\": 20\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/items/",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"items",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all items under category",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Cappuccino\",\n  \"image\": \"https://example.com/images/cappuccino.jpg\",\n  \"description\": \"A classic hot coffee drink with steamed milk and foam.\",\n  \"taxApplicable\": true,\n  \"tax\": 5,\n  \"baseAmount\": 150,\n  \"discount\": 20\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/items/by-category/690c5b9f93f9dcedfc315a47",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"items",
+								"by-category",
+								"690c5b9f93f9dcedfc315a47"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all items under subcategory",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Cappuccino\",\n  \"image\": \"https://example.com/images/cappuccino.jpg\",\n  \"description\": \"A classic hot coffee drink with steamed milk and foam.\",\n  \"taxApplicable\": true,\n  \"tax\": 5,\n  \"baseAmount\": 150,\n  \"discount\": 20\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/items/by-subcategory/690c5eea93f9dcedfc315a51",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"items",
+								"by-subcategory",
+								"690c5eea93f9dcedfc315a51"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get items by name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Cappuccino\",\n  \"image\": \"https://example.com/images/cappuccino.jpg\",\n  \"description\": \"A classic hot coffee drink with steamed milk and foam.\",\n  \"taxApplicable\": true,\n  \"tax\": 5,\n  \"baseAmount\": 150,\n  \"discount\": 20\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/items/Cappuccino",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"items",
+								"Cappuccino"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search items by name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Cappuccino\",\n  \"image\": \"https://example.com/images/cappuccino.jpg\",\n  \"description\": \"A classic hot coffee drink with steamed milk and foam.\",\n  \"taxApplicable\": true,\n  \"tax\": 5,\n  \"baseAmount\": 150,\n  \"discount\": 20\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/items/search/name?q=Cappuccino",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"items",
+								"search",
+								"name"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Cappuccino"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update items",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Cappuccino\",\n  \"image\": \"https://example.com/images/cappuccino.jpg\",\n  \"description\": \"A primitive hot coffee drink with steamed milk and foam.\",\n  \"taxApplicable\": true,\n  \"tax\": 25,\n  \"baseAmount\": 10,\n  \"discount\": 20\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/items/690c615993f9dcedfc315a62",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"items",
+								"690c615993f9dcedfc315a62"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
